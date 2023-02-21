@@ -1,0 +1,10 @@
+article {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing);
+}
+
+article>h1 {
+    --typography-spacing-vertical: 1rem;
+    font-size: 1.125rem;
+}

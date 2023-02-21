@@ -1,0 +1,9 @@
+@import 'https://unpkg.com/@picocss/pico@latest/css/pico.min.css';
+
+@import 'variables.css';
+
+@import 'article.css';
+@import 'footer.css';
+@import 'grid.css';
+@import 'main.css';
+@import 'nav.css';
