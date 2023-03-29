@@ -1,9 +1,86 @@
-@import 'https://unpkg.com/@picocss/pico@latest/css/pico.min.css';
+[data-theme='light'],
+:root:not([data-theme='dark']) {
+  --primary: #0e54a1;
+  --primary-hover: #09386b;
+  --primary-focus: #09386b;
+  --primary-inverse: #fff;
 
-@import 'variables.css';
+  --muted-color: #cfcfcf;
 
-@import 'article.css';
-@import 'footer.css';
-@import 'grid.css';
-@import 'main.css';
-@import 'nav.css';
+  --border-radius: 0;
+}
+
+/* Navigation */
+nav {
+  padding: 0 var(--spacing);
+  background-color: var(--primary);
+}
+
+nav a,
+nav [role='button'] {
+  color: var(--muted-color);
+}
+
+nav a[aria-current],
+nav a.active,
+nav a:hover,
+nav [role='link']:hover,
+nav ul {
+  color: var(--primary-inverse);
+}
+
+/* Grid */
+.grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Hgroup */
+main > hgroup {
+  text-align: center;
+}
+
+/* Articles */
+section > article {
+  display: flex;
+  flex-direction: column;
+}
+
+section > article > h1 {
+  --typography-spacing-vertical: 1rem;
+  font-size: 1.125rem;
+}
+
+section > article > header ,
+section > article > footer {
+  padding: 0;
+}
+
+section > article > footer {
+  margin-top: auto;
+}
+
+section > article > footer > a {
+  width: 100%;
+}
+
+/* Footer */
+body > footer {
+  background-color: var(--muted-color);
+  padding: var(--block-spacing-vertical) 0 0;
+}
+
+body > footer a {
+  color: var(--primary-inverse);
+}
+
+body > footer {
+  text-align: center;
+}
+
+body > footer > section:last-child {
+  --block-spacing-vertical: 0;
+  padding: var(--spacing);
+  font-size: calc(var(--font-size) * 0.875);
+  background-color: var(--primary);
+  color: var(--primary-inverse);
+}

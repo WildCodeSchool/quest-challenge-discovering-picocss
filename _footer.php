@@ -1,4 +1,4 @@
-<footer class="text-center">
+<footer>
     <section class="container">
         <h2>The css frameworks are very useful</h2>
         <p>
@@ -6,6 +6,6 @@
         </p>
     </section>
     <section>
-        &copy; 2022 wilders | images <a href='https://picsum.photos/' target="_blank">@picsum</a>
+        &copy; <?=date('Y')?> wilders | images <a href='https://picsum.photos/' target="_blank">@picsum</a>
     </section>
 </footer>
