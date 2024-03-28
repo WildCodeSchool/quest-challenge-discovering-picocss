@@ -6,9 +6,9 @@
     <li><a href="#" aria-current="page">Home</a></li>
     <li><a href="#">About</a></li>
     <li>
-      <details role="list">
-        <summary aria-haspopup="listbox" role="button">Categories</summary>
-        <ul role="listbox">
+      <details class="dropdown">
+        <summary role="button">Categories</summary>
+        <ul>
           <li><a href="#">Photos</a></li>
           <li><a href="#">Articles</a></li>
           <li><a href="#">Projects</a></li>

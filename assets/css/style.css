@@ -1,24 +1,23 @@
 [data-theme='light'],
 :root:not([data-theme='dark']) {
-  --primary: #0e54a1;
-  --primary-hover: #09386b;
-  --primary-focus: #09386b;
-  --primary-inverse: #fff;
+  --pico-primary: #0e54a1;
+  --pico-primary-hover: #09386b;
+  --pico-primary-focus: #09386b;
+  --pico-primary-inverse: #fff;
+  --pico-border-radius: 0;
 
-  --muted-color: #cfcfcf;
-
-  --border-radius: 0;
+  --pico-muted-color: #cfcfcf;
 }
 
 /* Navigation */
 nav {
-  padding: 0 var(--spacing);
-  background-color: var(--primary);
+  padding: 0 var(--pico-spacing);
+  background-color: var(--pico-primary);
 }
 
 nav a,
 nav [role='button'] {
-  color: var(--muted-color);
+  color: var(--pico-muted-color);
 }
 
 nav a[aria-current],
@@ -26,7 +25,7 @@ nav a.active,
 nav a:hover,
 nav [role='link']:hover,
 nav ul {
-  color: var(--primary-inverse);
+  color: var(--pico-primary-inverse);
 }
 
 /* Grid */
@@ -36,6 +35,7 @@ nav ul {
 
 /* Hgroup */
 main > hgroup {
+  padding: var(--pico-spacing);
   text-align: center;
 }
 
@@ -46,7 +46,6 @@ section > article {
 }
 
 section > article > h1 {
-  --typography-spacing-vertical: 1rem;
   font-size: 1.125rem;
 }
 
@@ -65,12 +64,12 @@ section > article > footer > a {
 
 /* Footer */
 body > footer {
-  background-color: var(--muted-color);
-  padding: var(--block-spacing-vertical) 0 0;
+  background-color: var(--pico-muted-color);
+  padding: var(--pico-block-spacing-vertical) 0 0;
 }
 
 body > footer a {
-  color: var(--primary-inverse);
+  color: var(--pico-primary-inverse);
 }
 
 body > footer {
@@ -78,9 +77,9 @@ body > footer {
 }
 
 body > footer > section:last-child {
-  --block-spacing-vertical: 0;
-  padding: var(--spacing);
-  font-size: calc(var(--font-size) * 0.875);
-  background-color: var(--primary);
-  color: var(--primary-inverse);
+  --pico-block-spacing-vertical: 0;
+  padding: var(--pico-spacing);
+  font-size: 0.875rem;
+  background-color: var(--pico-primary);
+  color: var(--pico-primary-inverse);
 }

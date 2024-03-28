@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discovering Pico</title>
-    <link rel="stylesheet" href='https://unpkg.com/@picocss/pico@1.*/css/pico.min.css' />
+    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css' />
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
